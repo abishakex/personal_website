@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
-import ML from './components/ml';
+import ML from './components/ML';
 import Reads from './components/Reads';
 import BlogPost from './components/BlogPost';  // Make sure BlogPost is imported
 import Header from './components/Header';
