@@ -5,7 +5,6 @@ const Reads = () => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
-        // Fetch the list of Reads blogs (similarly, we can hardcode this for now)
         const blogFiles = [
             { title: 'Book Review: The Great Gatsby', link: '/reads/gatsby', blurb: "hello" },
             { title: 'Deep Dive into Sapiens', link: '/reads/sapiens', blurb: "hello" },

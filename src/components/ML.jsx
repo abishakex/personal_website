@@ -5,7 +5,6 @@ const ML = () => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
-        // Fetch the list of ML blogs (for now we will hardcode this, later you can use fs or import if using a backend)
         const blogFiles = [
             { title: 'Basics of Neural Networks', link: '/ml/NN', blurb: 'Exploring the MNIST dataset with Neural Networks' },
             { title: 'Understanding Convolutional Neural Networks', link: '/ml/CNN', blurb: 'Exploring the CIFAR10 dataset with CNNs' },

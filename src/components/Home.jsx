@@ -16,7 +16,7 @@ const Home = () => {
                 I also plan to write about the books and articles that I've read.
             </p>
 
-            {/* Show links only on Home page */}
+
             <div className="links" style={{ textAlign: 'left' }}>
                 <ul>
                     <li><Link to="/ml">Machine Learning</Link></li>

@@ -3,14 +3,12 @@ import ReactMarkdown from 'react-markdown';
 import { useParams } from 'react-router-dom';
 
 const BlogPost = ({ category }) => {
-    const { slug } = useParams();  // Get the slug from the URL
+    const { slug } = useParams();
     const [content, setContent] = useState('');
 
     useEffect(() => {
-        // Construct the path to the blog post Markdown file
         const filePath = `/articles/${category}/${slug}.md`;
 
-        // Fetch the Markdown file
         fetch(filePath)
             .then((response) => response.text())
             .then((text) => {
@@ -24,7 +22,6 @@ const BlogPost = ({ category }) => {
 
     return (
         <div className="container">
-            {/* Only render the content of the blog post */}
             <ReactMarkdown>{content}</ReactMarkdown>
         </div>
     );
